@@ -18,3 +18,11 @@ abs(3- 5)
 
 2.2
 float_of_int 3 +. 2.5
+int_of_float 0.7
+char_of_int((int_of_char'A') + 20)
+5.0 ** 2.0
+
+2.3
+1. float_of_int(int_of_float 5.0)
+2. (sin 3.0 /. 2.0) ** 2.0 +. cos (3.0 /. 2.0) ** 2.0
+3. sqrt (3*3) + (4*4)
