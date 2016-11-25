@@ -26,3 +26,7 @@ char_of_int((int_of_char'A') + 20)
 1. float_of_int(int_of_float 5.0)
 2. (sin 3.0 /. 2.0) ** 2.0 +. cos (3.0 /. 2.0) ** 2.0
 3. sqrt (3*3) + (4*4)
+
+3. 関数言語の醍醐味；関数
+let pi = 3.14
+let area_of_circle r = r*. r*. pi(半径rの円の面積を求める)
