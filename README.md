@@ -30,3 +30,7 @@ char_of_int((int_of_char'A') + 20)
 3. 関数言語の醍醐味；関数
 let pi = 3.14
 let area_of_circle r = r*. r*. pi(半径rの円の面積を求める)
+
+let abs x = if x >0 then x else if x= 0 then 0 else -(x)
+
+let hitoketa x = 1 <= x && x<=10
