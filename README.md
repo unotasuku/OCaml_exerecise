@@ -48,6 +48,10 @@ let cone_of_heightTwo r =　(*三角錐の体積の求め方*)
 let g x  =
  let power3 x = x*x*x in
  (power3 x) + (power3 (x+1))
- 
 
+let souba x = float -> int
+
+let x= 100.0
+let souba x = 100.0 /1
+float -> intの変換の仕方が不明
  
