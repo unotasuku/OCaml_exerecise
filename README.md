@@ -34,3 +34,20 @@ let area_of_circle r = r*. r*. pi(半径rの円の面積を求める)
 let abs x = if x >0 then x else if x= 0 then 0 else -(x)
 
 let hitoketa x = 1 <= x && x<=10
+
+let pi = 3.14 (*ｐi の定義*)
+let cone_of_heightTwo r =　(*三角錐の体積の求め方*)
+ let base = r *. r *. pi in
+ base *. 2.0 /. 3.0
+ 
+ let f x = （*合成関数の定義*)
+  let x3 = x* x* x in
+  let x3_1 = x3 + 1 in
+  x3 +x3_1
+  
+let g x  =
+ let power3 x = x*x*x in
+ (power3 x) + (power3 (x+1))
+ 
+
+ 
