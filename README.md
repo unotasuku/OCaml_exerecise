@@ -55,3 +55,39 @@ let x= 100.0
 let souba x = 100.0 /1
 float -> intの変換の仕方が不明
  
+# ???足の数の合計を与えら鶴の数と亀の返す*) 鶴の数と亀の数を 返す*)
+  (*と足の数の合計を与えら鶴の数を返す*)ent.
+  (*tsurukame : int -> int -> int -><fun>*)ら 鶴の数を返す*)
+  let tsurukame d c = 4*d - c;;nt -><fun>*)
+  let tsurukame d c = 4*d - c;;
+Error: Illegal character (\129)
+# let tsurukame d c = 4 * d - c;;
+val tsurukame : int -> int -> int = <fun>
+# tsurukame 12 42 ;;
+- : int = 6
+# let tsurukmae a b = (4*b - c) /2;;
+Error: Unbound value c
+# let tsurukame  a b = (4*b - c)/2;;
+Error: Unbound value c
+# let tsurukme a b = (4*b - a) / 2;;
+val tsurukme : int -> int -> int = <fun>
+# tsurukame 12 42 ;;
+- : int = 6
+# let tsurukame a b = (c - 4*d)/2;;
+Error: Unbound value c
+# let tsurukme c d = ( c - 4*d)/2;;
+val tsurukme : int -> int -> int = <fun>
+# tsurukame 12 42;;
+- : int = 6
+# let tsurukame a b = 2 * b -a;;
+val tsurukame : int -> int -> int = <fun>
+# tsurukame 12 42;;
+- : int = 72
+# tsurukame 42 12;;
+- : int = -18
+# let tsurukame a b = (4*b -a )/2;;
+val tsurukame : int -> int -> int = <fun>
+# tsurukame 12 42;;
+- : int = 78
+# tsurukame 42 12;;
+- : int = 3
