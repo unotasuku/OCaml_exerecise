@@ -91,3 +91,21 @@ val tsurukame : int -> int -> int = <fun>
 - : int = 78
 # tsurukame 42 12;;
 - : int = 3
+
+# let jikan x = if x > 1 && x<=12 then "AM" 
+                                  else if x >= 13 && x < 25 then "PM"
+                                  else "N.W.A";
+                                  
+val jikan : int -> string = <fun>
+# (*2次方程式の係数を与えたら判別式の値を返す*)
+  (*float->float->float->float*)
+  let hanbetsusiki a b c = b**2. -. 4.*.a*.c;;
+val hanbetsusiki : float -> float -> float -> float = <fun>
+
+  (*2次方の係数が与え解の個数を返す*)omment.
+  (*kosuu: int ->string*) えられたら 解の個数を返す*)
+  # let kai_no_kosuu a b c = if b**2. -. 4.*.a*.c > 0. then 2
+  					             else if b**2. -. 4.*.a*.c = 0. then 1
+                                                     else 0;;    
+val kai_no_kosuu : float -> float -> float -> int = <fun>
+# 
