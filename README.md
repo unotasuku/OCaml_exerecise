@@ -37,6 +37,8 @@ let hitoketa x = 1 <= x && x<=10
 
 let pi = 3.14 (*ｐi の定義*)
 let cone_of_heightTwo r =　(*三角錐の体積の求め方*)
+
+
  let base = r *. r *. pi in
  base *. 2.0 /. 3.0
  
@@ -109,3 +111,30 @@ val hanbetsusiki : float -> float -> float -> float = <fun>
                                                      else 0;;    
 val kai_no_kosuu : float -> float -> float -> int = <fun>
 # 
+# (*2次方程式を与えられたら虚数解の有無を返す*)
+  (*float->float->float->string*)
+  let kyosukai a b c = if B**2. - 4*a*c < 0 then "YES"
+                                            else "NO";;
+Error: Unbound constructor B
+# let kyosuukai a b c = if b**2. -. 4.*a*c < 0. then "YES"
+  						else "NO";;
+Error: This expression has type float but an expression was expected of type
+         int
+# let kyosuukai a b c = if b**2. -.4.*.a*.c < 0. then "Yes"
+  						 else"No";;
+val kyosuukai : float -> float -> float -> string = <fun>
+# kyosukai 3. 4. 5.;;
+Error: Unbound value kyosukai
+# kyosuukai 3. 4. 5.;;
+- : string = "Yes"
+
+# (*BMIを計算し体型を返す*) す*)
+  (*BMI:float->float->float->string*)
+  let taikei a b = if a**2./.b < 18.5 then "Yase"
+                                      else if a**2. /.b >30 then "Hyoujyun";;
+Error: This expression has type int but an expression was expected of type
+         float
+# let taike a b = if a**2. /. b < 18.5 then "Yase"
+                                       else if a**2. /. b > 30. then "Hyoujyun"
+                                       else "Debu";;
+val taike : float -> float -> string = <fun>
