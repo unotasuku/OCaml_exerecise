@@ -138,3 +138,8 @@ Error: This expression has type int but an expression was expected of type
                                        else if a**2. /. b > 30. then "Hyoujyun"
                                        else "Debu";;
 val taike : float -> float -> string = <fun>
+
+ (*5教科の点数が与えられたら合計点と平均組みにして返す*) す*)
+  (*goukei_to_heikin: (float*string)->(float*float)*)
+  let goukei_to_heikin pair = match pair with 
+    (a,b,c,d,e) -> (a+.b+.c+.d+.e , (a+.b+.c+.d+.e)/.5.)
